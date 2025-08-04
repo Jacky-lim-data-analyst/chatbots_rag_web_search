@@ -6,7 +6,7 @@ This project is an advanced chatbot that combines local knowledge from YouTube v
 * **Hybrid search**: Combines local document retrieval with web search to provide a more comprehensive and context-aware answers.
 * **Local knowledge Base**: Uses YouTube video transcripts stored and indexed for fast semantic and text search.
 * **Web search Integration**: Fallbacks to `ddgs` (Dux Distributed Global Search) and Wikipedia article snippets when local knowledge is not available.
-* **Summarization**: Utilizes Ollama's `phi4` model for generating summaries of conversation history; `llama3.2` model for interact chat.
+* **Summarization**: Utilizes Ollama's `phi4` model for generating summaries of conversation history; `llama3.2` model for interact chat in this project. Feel free to experiment with different models.
 * **Streaming responses**: Streams LLM responses in real time.
 
 ## Project structure
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 
 3. Install Ollama and MongoDB:
-* Make sure Ollama and MongoDB are running.
+* Make sure Ollama and MongoDB are running on your device.
 
 4. Download the required nltk data. Navigate to `./nlp/nltk_downloads.py` and run the script.
 
@@ -73,4 +73,4 @@ You can customize Ollama model names, database URIs and other parameters by edit
 - Wrap the application in a web app, like streamlit, chainlit, Gradio and etc.
 
 ## License
-MIT License
+[MIT License](./LICENSE)
