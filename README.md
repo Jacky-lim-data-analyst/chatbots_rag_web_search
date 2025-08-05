@@ -32,7 +32,7 @@ main.py   # entry point of app
 - [Ollama Python SDK](https://github.com/ollama/ollama-python.git)
 - [MongoDB](https://www.mongodb.com/docs/manual/administration/install-community/#std-label-install-mdb-community-edition). You can choose a cloud-based service like `Atlas`, but I use the community version for this project.
 - [ChromaDB](https://docs.trychroma.com/docs/overview/getting-started)
-- [NLTK](https://www.nltk.org/) and some of the [data](https://www.nltk.org/nltk_data/)
+- [NLTK](https://www.nltk.org/) and some of the [data](https://www.nltk.org/nltk_data/). Remember to navigate to `./nlp/nltk_downloads.py` and run the scripts to download the required data.
 - Other dependencies can be found in [requirements.txt](./requirements.txt)
 
 ## Installation
@@ -49,6 +49,7 @@ pip install -r requirements.txt
 
 3. Install Ollama and MongoDB:
 * Make sure Ollama and MongoDB are running on your device.
+* Note: You have to use models with *tool calling* capabilities for the main chat application. 
 
 4. Download the required nltk data. Navigate to `./nlp/nltk_downloads.py` and run the script.
 
