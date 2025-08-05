@@ -54,7 +54,12 @@ pip install -r requirements.txt
 4. Download the required nltk data. Navigate to `./nlp/nltk_downloads.py` and run the script.
 
 ## Usage
-Run the chatbot interactively.
+1. Download some YouTube transcripts from your favorite YouTube channels by running the commands below:
+```sh
+python add_data.py "YOUTUBE_VIDEO_URL_OR_ID"
+```
+
+2. Run the chatbot interactively.
 ```sh
 python main.py
 ```
